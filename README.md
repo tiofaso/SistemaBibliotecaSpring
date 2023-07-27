@@ -1,6 +1,7 @@
 # Exercício de fixação de spring boot
 
-Nesse primeiro exercício de spring boot foi criado um pequeno sistema tipo CRUD para inserir, consultar, editar e apagar dados do acervo de uma biblioteca fictícia.
+Nesse primeiro exercício de spring boot foi criado um pequeno sistema tipo CRUD para inserir, consultar, editar e apagar
+dados do acervo de uma biblioteca fictícia.
 
 Como dados de entrada para testes foi utilizado os seguintes itens disponíveis na pasta **/resources/json**:
 
@@ -33,7 +34,8 @@ Como dados de entrada para testes foi utilizado os seguintes itens disponíveis 
         "isbn": "9788532516268"
         }
 
-Para poder movimentar a DB, teste os seguintes links em um programa como **[Postman](https://www.postman.com/downloads/)**:
+Para poder movimentar a DB, teste os seguintes links em um programa como **[Postman](https://www.postman.com/downloads/)
+**:
 
 [http://localhost:8080/consulta](http://localhost:8080/consulta)<br>
 [http://localhost:8080/adicionar](http://localhost:8080/adicionar)<br>
