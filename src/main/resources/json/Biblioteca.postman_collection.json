@@ -1,76 +1,76 @@
 {
-	"info": {
-		"_postman_id": "f390606b-fe7c-45ac-aca8-60648941f12a",
-		"name": "Biblioteca",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "28447111"
-	},
-	"item": [
-		{
-			"name": "consultar acervo completo",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "http://localhost:8080/consulta"
-			},
-			"response": []
-		},
-		{
-			"name": "adicionar livro ao acervo",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"autor\":\"H. P. Lovecraft\",\r\n    \"dataLancamento\":\"2009\",\r\n    \"isbn\":\"9788577151165\",\r\n    \"nomeLivro\":\"O Chamado de Cthulhu\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "http://localhost:8080/adicionar"
-			},
-			"response": []
-		},
-		{
-			"name": "consulta livro por id",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "http://localhost:8080/consultalivro/2"
-			},
-			"response": []
-		},
-		{
-			"name": "altera livro específico",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"url": "http://localhost:8080/altera/"
-			},
-			"response": []
-		},
-		{
-			"name": "apaga livro por id",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": "http://localhost:8080/apagalivro/5"
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "f390606b-fe7c-45ac-aca8-60648941f12a",
+    "name": "Biblioteca",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "28447111"
+  },
+  "item": [
+    {
+      "name": "consultar acervo completo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8080/consulta"
+      },
+      "response": []
+    },
+    {
+      "name": "adicionar livro ao acervo",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"autor\":\"H. P. Lovecraft\",\r\n    \"dataLancamento\":\"2009\",\r\n    \"isbn\":\"9788577151165\",\r\n    \"nomeLivro\":\"O Chamado de Cthulhu\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:8080/adicionar"
+      },
+      "response": []
+    },
+    {
+      "name": "consulta livro por id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:8080/consultalivro/2"
+      },
+      "response": []
+    },
+    {
+      "name": "altera livro específico",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": "http://localhost:8080/altera/"
+      },
+      "response": []
+    },
+    {
+      "name": "apaga livro por id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:8080/apagalivro/5"
+      },
+      "response": []
+    }
+  ]
 }

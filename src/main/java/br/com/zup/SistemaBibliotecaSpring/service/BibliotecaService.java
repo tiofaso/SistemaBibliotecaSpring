@@ -36,19 +36,19 @@ public class BibliotecaService {
     public BibliotecaModel alterarLivro(Long id, BibliotecaModel bibliotecaModel) {
         BibliotecaModel livro = buscaPorId(id).get();
 
-        if(bibliotecaModel.getAutor() != null) {
+        if (bibliotecaModel.getAutor() != null) {
             livro.setAutor(bibliotecaModel.getAutor());
         }
 
-        if(bibliotecaModel.getNomeLivro() != null) {
+        if (bibliotecaModel.getNomeLivro() != null) {
             livro.setNomeLivro(bibliotecaModel.getNomeLivro());
         }
 
-        if(bibliotecaModel.getDataLancamento() != null) {
+        if (bibliotecaModel.getDataLancamento() != null) {
             livro.setDataLancamento(bibliotecaModel.getDataLancamento());
         }
 
-        if(bibliotecaModel.getDataLancamento() != null) {
+        if (bibliotecaModel.getDataLancamento() != null) {
             livro.setIsbn(bibliotecaModel.getIsbn());
         }
 

@@ -41,8 +41,8 @@ public class BibliotecaController {
     //Endpoint de atualização
     //Put - atualiza um determinado livro do acervo
     @PutMapping(path = "/alteralivro/{id}")
-    public BibliotecaModel alteraLivro(@PathVariable Long id, @RequestBody BibliotecaModel bibliotecaModel){
-        return bibliotecaService.alterarLivro(id,bibliotecaModel);
+    public BibliotecaModel alteraLivro(@PathVariable Long id, @RequestBody BibliotecaModel bibliotecaModel) {
+        return bibliotecaService.alterarLivro(id, bibliotecaModel);
     }
 
     //End point de deleção (diabo de nome feio!)
